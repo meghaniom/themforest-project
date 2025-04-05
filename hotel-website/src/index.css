@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+  font-family: "Cormorant Garamond", serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* 👇 Set default background to your desired dark or themed color */
+body {
+    background-color: #000; /* or any dark color you want */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  .app-loader {
+    background-color: #000; /* your desired color */
+    height: 100vh;
+    width: 100%;
+  }
+  

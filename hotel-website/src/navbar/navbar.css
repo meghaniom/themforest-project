@@ -1,0 +1,108 @@
+.navbar-outer {
+  height: 100vh; /* adjust as needed */
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://royellaa.netlify.app/images/home-1/hero-bg2.jpg");
+}
+
+.navbar-innner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.item1-outer {
+  width: 20%;
+  display: block;
+}
+.item1-outer img {
+  display: block;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+}
+
+.itel-list li {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.itel-list li > a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  text-transform: uppercase;
+}
+.item-booking-online {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mood-icon-img {
+    padding-right: 15px; 
+  }
+  
+.mood-icon-img img {
+  filter: sepia(1) hue-rotate(20deg) saturate(5);
+  transition: transform 0.5s ease;
+  margin-right: 15px;
+}
+
+.mood-icon-img img:hover {
+  transform: rotate(180deg);
+}
+
+.item-booking-online .booking-online {
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+ 
+  }
+  
+  .item-booking-online .booking-online a {
+    font-size: 18px;
+    color: #fff !important;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+  .item-booking-online .booking-online a:hover {
+    background-color: rgb(193, 157, 104);
+    border-color: rgb(193, 157, 104);
+    transform: scale(1.05);
+    color: #fff !important;
+  }
+  
+@keyframes scroll-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.navbar-outer:hover::before,
+.navbar-outer:hover::after {
+  animation-play-state: paused;
+  cursor: pointer;
+}
